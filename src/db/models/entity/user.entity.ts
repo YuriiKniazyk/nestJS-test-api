@@ -13,4 +13,10 @@ export class UserEntity {
 
   @Column()
   password: string;
+
+  @Column({ type: 'varchar', length: 100, nullable: true })
+  lastName: string;
+
+  @Column()
+  role: string;
 }

@@ -1,10 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsEmail, IsNotEmpty, MinLength } from 'class-validator';
 
-export class UsersCreateUpdateModel {
-  @ApiProperty()
-  id: number;
-
+export class AuthModel {
   @ApiProperty()
   @IsNotEmpty()
   @IsEmail()
@@ -14,9 +11,4 @@ export class UsersCreateUpdateModel {
   @IsNotEmpty()
   @MinLength(8)
   password: string;
-
-  @ApiProperty()
-  @IsNotEmpty()
-  @MinLength(4)
-  name: string;
 }
