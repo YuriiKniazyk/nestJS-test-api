@@ -15,4 +15,5 @@ export const config: TypeOrmModuleOptions = {
   cli: {
     migrationsDir: 'src/db/migrations',
   },
+  logging: ['query', 'error'],
 };
