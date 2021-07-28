@@ -14,7 +14,6 @@ async function bootstrap() {
     }),
   );
 
-  // TODO do not add swagger for
   const document = SwaggerModule.createDocument(
     app,
     new DocumentBuilder()
